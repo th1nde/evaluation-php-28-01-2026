@@ -8,7 +8,7 @@ class perroquet extends Animal{
 
 	public function crier(){
 
-		return "Coco veut un gâteau ! " . $this->nom .  "siffle";
+		return "Coco veut un gâteau ! " . $this->nom .  " siffle " . "<br>";
 
 	}
 	public function envole(){

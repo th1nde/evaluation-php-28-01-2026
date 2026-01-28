@@ -8,15 +8,15 @@ class Animal {
 	protected $estmalade;
 	
 
-	public function __construct($n, $p){
+	public function __construct($n, $p, $m){
 		$this->nom = $n;
 		$this->poids = $p;
-		$this->estmalade = false;
+		$this->estmalade = $m;
 	} 
 	public function getNom(): string {
 
     	return $this->nom;
-		
+
 	}
 
 	public function manger(){
@@ -25,6 +25,7 @@ class Animal {
 
 	public function sesoigner(){
 		$this->estmalade = false;
+		return $this->nom . " a été soigné.";
 	}
 
 	public function crier(){

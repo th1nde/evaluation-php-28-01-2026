@@ -10,16 +10,18 @@ use ProjectZoo\Safari\animaux\lion;
 use ProjectZoo\Safari\animaux\perroquet;
 use ProjectZoo\Safari\Parc\enclos;
 
-$lion = new lion ("simba", 190, 7);
-$perroquet = new perroquet("coco", 2);
-$perroquet2 = new perroquet("jago", 3);
+$lion = new lion ("simba", 190, true, 7);
+$perroquet = new perroquet("coco", 2, false);
+$perroquet2 = new perroquet("jago", 3, false);
 
 $enclos = new enclos(3);
 
 echo $enclos->ajouterunanimal($lion);
 echo $enclos->ajouterunanimal($perroquet);
 echo $enclos->ajouterunanimal($perroquet2);
-
+echo $enclos->ajouterunanimal($lion);
 
 echo $enclos->visiteguidee();
+
+echo $lion->sesoigner();
 ?>
